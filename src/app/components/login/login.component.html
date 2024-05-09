@@ -1,0 +1,33 @@
+<div class="regiter" class="text-center">
+    <main class="form-signin">
+        <form #loginForm='ngForm' (ngSubmit)="login(loginForm)">
+        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <div class="form-floating mb-2">
+            <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your registered Email id"
+                ngModel
+                />
+        </div>
+        <div class="form-floating">
+            <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                ngModel
+                />
+        </div>
+        <button class="w-100 btn btn-lg btn-primary mt-2">
+        Login
+    </button>
+    <p class="mt-5 mb-3 text-muted">Not register?
+        <a routerLink="/regiter">Register now</a>
+    </p>
+        </form>
+    </main>
+</div>
